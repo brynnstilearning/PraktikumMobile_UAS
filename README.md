@@ -1,223 +1,237 @@
-# Kajian Scheduler – Mobile App
+# 📱 Kajian Scheduler – Mobile App
 
-Aplikasi mobile untuk membantu umat Muslim mengatur jadwal kajian, mendapatkan informasi sholat real-time, membaca Al-Qur'an digital, serta melacak kehadiran kajian dengan mudah. Mendukung CRUD kajian, multi-language (Indonesia & English), dark mode, dan banyak fitur lainnya.
-
----
-
-## 📌 Daftar Isi
-- [Fitur Utama](#fitur-utama)
-- [Teknologi & Tools](#teknologi--tools)
-- [Manajemen Kajian CRUD](#manajemen-kajian-crud)
-- [Sholat Real-Time](#sholat-real-time)
-- [Al-Quran Digital](#alquran-digital)
-- [Multi-Language](#multi-language)
-- [Dark Mode](#dark-mode)
-- [Authentication System](#authentication-system)
-- [User Profile & Stats](#user-profile--stats)
-- [API Endpoint & Error Handling](#api-endpoint--error-handling)
-- [Code Example](#code-example)
+Aplikasi mobile berbasis Flutter yang digunakan untuk mengelola jadwal kajian Islami secara mudah.  
+Fitur utama meliputi CRUD kajian, jadwal sholat real-time, Al-Qur'an digital, autentikasi Firebase, dark mode, statistik pengguna, serta multi-language (Indonesia & English).
 
 ---
 
-## ✨ Fitur Utama
+## 📸 Tampilan Aplikasi
 
-### 🔹 Manajemen Kajian (CRUD)
-- **Create**: Tambah kajian baru (judul, ustadz, tema, tanggal, waktu, lokasi, kategori).
-- **Read**: Lihat daftar kajian dengan filter (hari, lokasi, kategori).
-- **Update**: Edit detail kajian.
-- **Delete**: Hapus kajian.
-- **Search**: Cari kajian berdasarkan judul, ustadz, tema.
-- **Status Toggle**:  
-  - *"Sudah Dihadiri"*,  
-  - *"Akan Datang"*,  
-  - *"Batal"*
-- **Sholat Mode**: Set status otomatis berdasarkan waktu sholat.
-- **Penyimpanan**: Firebase Firestore.
+> *(Tambahkan screenshot Anda di folder `/screenshots` dan update path di bawah)*
+
+<p align="left">
+  <img src="screenshots/splash.png" width="180" />
+  <img src="screenshots/dashboard.png" width="180" />
+  <img src="screenshots/prayer.png" width="180" />
+  <img src="screenshots/quran.png" width="180" />
+</p>
 
 ---
 
-## 🕒 Sholat Real-Time
-Menampilkan **5 waktu sholat harian** berdasarkan lokasi pengguna dengan:
+## 📖 Deskripsi Singkat
 
-- Hitungan mundur *real-time* menuju sholat berikutnya.
-- Update otomatis setiap detik (`HH:MM:SS`).
-- 10+ kota besar Indonesia sebagai default fallback:
-  - Jakarta, Surabaya, Bandung, Medan, Semarang, Makassar, Palembang, Batam, Denpasar, Malang, Yogyakarta.
-- **Data API**: Aladhan Prayer Times API.
-- **Fallback Mode**: Tersedia data offline jika tidak ada koneksi.
-
----
-
-## 📖 Al-Qur'an Digital
-Termasuk:
-
-- Daftar **114 surat** lengkap dengan teks Arab, transliterasi, dan terjemahan Bahasa Indonesia.
-- Filter berdasarkan jenis wahyu (*Makkiyah / Madaniyyah*).
-- Pencarian surat dan ayat.
-- Pengaturan tampilan:
-  - Font Arab adjustable.
-  - Toggle transliterasi.
-  - Dark/Light optimized typography.
-- Data diambil dari **Qur'an API by Gading Dev**.
+**Kajian Scheduler** adalah aplikasi islami yang membantu pengguna:
+- Menambahkan, mengedit, dan menghapus jadwal kajian
+- Melihat jadwal sholat real-time berdasarkan lokasi
+- Membaca 114 surah Al-Qur’an lengkap dengan terjemahan
+- Mengatur tema aplikasi (light/dark mode)
+- Menggunakan dua pilihan bahasa (Indonesia & English)
+- Login & register menggunakan Firebase Authentication
+- Menyimpan data kajian ke Firebase Firestore
+- Menghitung statistik kajian secara otomatis
 
 ---
 
-## 🌍 Multi-Language Support
-- Bahasa Indonesia 🇮🇩 & English 🇺🇸  
-- Switch bahasa tanpa restart aplikasi  
-- Semua UI & teks otomatis berubah  
-- Dukungan Provider (SettingsProvider)  
+# ✨ Fitur Utama
+
+### 🕌 1. Manajemen Kajian (CRUD)
+- Tambah kajian baru (judul, ustadz, tema, waktu, lokasi, kategori)
+- Edit kajian yang sudah dibuat
+- Hapus kajian
+- Mark status:  
+  ✔️ “Sudah Dihadiri”  
+  ✔️ “Akan Datang”  
+- Search berdasarkan judul / ustadz / tema  
+- Filter: Semua, Upcoming, Past  
+- Mode Ba’da Sholat → waktu otomatis menyesuaikan jadwal sholat
 
 ---
 
-## 🌙 Dark Mode
-- Memakai theme persistence menggunakan SharedPreferences  
-- Smooth animated transitions  
+### 🕒 2. Jadwal Sholat Real-Time
+- Menggunakan **Aladhan Prayer Times API**
+- Hitungan mundur real-time menuju sholat berikutnya (update per detik)
+- Tanggal Hijriah otomatis
+- Fallback offline jika tidak ada internet
+- Membahas 13 kota Indonesia (Jakarta, Bandung, Malang, Surabaya, dll)
 
 ---
 
-## 🔐 Authentication System
+### 📖 3. Al-Qur'an Digital
+Menggunakan **Quran API by Gading Dev**
+
+- 114 surah lengkap  
+- Teks Arab, transliterasi, dan terjemahan Indonesia  
+- Filter Makkiyyah / Madaniyyah  
+- Search surah  
+- Pengaturan ukuran font  
+- Toggle transliterasi  
+- Mode tampilan gelap/terang
+
+---
+
+### 🌐 4. Multi-Language Support
+- Bahasa Indonesia 🇮🇩  
+- English 🇬🇧  
+- Perubahan bahasa *real time* tanpa restart aplikasi
+
+---
+
+### 🌙 5. Dark Mode
+- Light & Dark Theme  
+- Menyimpan preferensi ke SharedPreferences  
+- Animasi transisi lembut  
+
+---
+
+### 🔐 6. Authentication System
 Menggunakan Firebase Authentication:
-
-- Login dengan Email/Password
-- Register pengguna baru
-- Reset password
-- Edit profile (nama & nomor telepon)
-- Verifikasi password sebelum update sensitif
-- Logout  
-- Avatar dibuat otomatis berdasarkan initial  
+- Login email & password  
+- Register akun baru  
+- Reset password via email  
+- Edit profile (nama & nomor telepon)  
+- Ganti password  
+- Logout dengan konfirmasi  
 
 ---
 
-## 👤 User Profile & Stats
-
-Dashboard statistik real-time:
-
-- Total kajian (dari Firebase)
-- Kajian bulan ini (auto-filter by date)
-- Grafik sederhana jumlah kegiatan
-- Edit profil & ganti password
+### 👤 7. User Stats
+- Total kajian  
+- Kajian bulan ini  
+- Avatar otomatis dari inisial nama  
 
 ---
 
-## 🛠 Teknologi & Tools
+# 🛠 Teknologi yang Digunakan
 
-### Frontend
-- **Flutter 3.x**
-- **Dart 3.x**
-- Provider State Management  
-  - `AuthProvider`  
-  - `SettingsProvider`  
-  - dll.
-
-### Backend & Database
-- Firebase Core `^2.25.4`
-- Firebase Authentication `^4.17.4`
-- Cloud Firestore `^4.15.4`
-- SharedPreferences `^2.2.2`
-- Local Storage untuk settings & cache
-
-### Networking
-- `http ^1.2.0` – REST API client
+| Teknologi | Keterangan |
+|----------|------------|
+| Flutter 3.x | Framework aplikasi mobile |
+| Dart 3.x | Bahasa pemrograman |
+| Firebase Authentication | Login, Register |
+| Cloud Firestore | Penyimpanan data kajian |
+| SharedPreferences | Local storage |
+| Provider | State management |
+| HTTP | Request ke API Aladhan & Qur'an |
+| Aladhan API | Jadwal sholat |
+| Quran API Gading Dev | Data Al-Qur’an |
 
 ---
 
-## 🔌 API Endpoint & Error Handling
+# 🚀 Cara Instalasi
 
-### Qur'an API (Gading Dev)
+### 1. Clone Repository
+```bash
+git clone https://github.com/brynnstilearning/PraktikumMobile_UAS
+cd PraktikumMobile_UAS
+2. Install Dependencies
+bash
+Copy code
+flutter pub get
+3. Firebase Setup
+Pastikan file google-services.json sudah berada di folder:
+android/app/
 
-#### Endpoint: Get All Surah List
-GET https://apiquran.gading.dev/surah
+Jika menggunakan Firebase sendiri:
 
+bash
+Copy code
+flutterfire configure
+4. Jalankan Aplikasi
+bash
+Copy code
+flutter run
+5. Build APK (Release)
+bash
+Copy code
+flutter build apk --release
+📚 Cara Penggunaan
+🔹 1. Login / Register
+Isi email & password
+
+Untuk akun baru → tekan “Daftar Akun Baru”
+
+Reset password tersedia
+
+🔹 2. Dashboard
+Greeting otomatis sesuai waktu
+
+Statistik kajian
+
+Daftar kajian yang bisa di-expand
+
+🔹 3. Tambah Kajian
+Tekan tombol +
+
+Isi seluruh form
+
+Simpan ke Firestore
+
+🔹 4. Edit / Hapus Kajian
+Expand card → pilih Edit atau Hapus
+
+🔹 5. Jadwal Sholat
+Melihat 5 waktu sholat harian
+
+Countdown real-time
+
+Bisa ubah kota dari menu Settings
+
+🔹 6. Al-Qur’an Digital
+114 surah tersedia
+
+Bisa search, filter, atur font, dan baca detail ayat
+
+🔹 7. Setelan Aplikasi
+Dark Mode
+
+Bahasa
+
+Lokasi kota
+
+About App
+
+📂 Struktur Folder
 css
 Copy code
+lib/
+├── models/
+├── services/
+│   ├── api/
+│   ├── firebase/
+├── providers/
+├── screens/
+├── widgets/
+├── utils/
+└── main.dart
+📥 Download APK
+Tambahkan file APK ke folder /apk/ lalu update link berikut:
 
-**Response Example:**
-```json
-{
-  "code": 200,
-  "data": [
-    {
-      "number": 1,
-      "name": {
-        "short": "الفاتحة",
-        "transliteration": { "id": "Al-Fatihah" },
-        "translation": { "id": "Pembukaan" }
-      },
-      "numberOfVerses": 7,
-      "revelation": { "id": "Mekah" }
-    }
-  ]
-}
-⚠️ Error Handling
-Auto-timeout 10 seconds
+👉 Download APK:
+https://github.com/brynnstilearning/PraktikumMobile_UAS/releases
 
-Auto fallback ke dummy data
-
-Cache data 1 jam untuk mengurangi API calls
-
-Try-catch di semua request
-
-🧩 Code Example
-Load Surah List
-dart
-Copy code
-@override
-Future<List> loadSuratList() async {
-  if (_cachedSuratList != null) {
-    print("📦 Using cached surat list");
-    return _cachedSuratList!;
-  }
-
-  try {
-    print("📡 Fetching surat list from API...");
-    final url = Uri.parse('${baseUrl}/surah');
-    final response = await http.get(url);
-
-    if (response.statusCode == 200) {
-      final data = jsonDecode(response.body);
-
-      if (data['code'] == 200) {
-        final List<dynamic> suratData = data['data'];
-
-        _cachedSuratList = suratData.map((json) {
-          String revelationType = "Makkiyyah";
-
-          if (json['revelation'] != null &&
-              json['revelation']['id'] != null) {
-            final revType = json['revelation']['id']
-                .toString()
-                .toLowerCase();
-            if (revType.contains("madinah")) {
-              revelationType = "Madaniyyah";
-            }
-          }
-
-          return Surat(
-            number: json['number'],
-            nameArabic: json['name']['short'],
-            nameLatin: json['name']['transliteration']['id'],
-            nameTranslation: json['name']['translation']['id'],
-            revelationType: revelationType,
-            numberOfAyat: json['numberOfVerses'],
-          );
-        }).toList();
-
-        print("📥 Loaded ${_cachedSuratList!.length} surat");
-        return _cachedSuratList!;
-      }
-      throw Exception("Failed to load surat list: ${response.statusCode}");
-    }
-  } catch (e) {
-    print("❌ Error loading surat list: $e");
-    return [];
-  }
-}
-📦 Status Proyek
-✔️ Sudah berjalan penuh
-✔️ Semua fitur utama selesai
-✔️ API stabil
-✔️ Siap dikembangkan lebih lanjut
+👨‍💻 Pengembang
+Nama: Nur Muhammad Anang Febriananto
+NIM: — isi jika perlu —
+Prodi: Teknik Informatika
+Universitas: UIN Maulana Malik Ibrahim Malang
 
 📜 Lisensi
-MIT License – bebas digunakan & dimodifikasi.
+MIT License – bebas digunakan.
+
+🙏 Acknowledgments
+Aladhan API
+
+Quran API by Gading Dev
+
+Firebase
+
+Flutter Community
+
+UIN Malang
+
+📞 Contact
+Jika ada pertanyaan:
+
+GitHub: https://github.com/brynnstilearning
+
+Email pribadi: (isi jika mau)
