@@ -185,6 +185,7 @@ Lokasi kota
 About App
 
 📁 Struktur Folder
+```bash
 lib/
 ├── models/
 ├── services/
@@ -195,7 +196,7 @@ lib/
 ├── widgets/
 ├── utils/
 └── main.dart
-
+```
 
 📥 Download APK
 
