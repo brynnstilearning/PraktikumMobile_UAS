@@ -206,11 +206,11 @@ Tambahkan file APK ke folder /apk/ lalu update link berikut:
 https://github.com/brynnstilearning/PraktikumMobile_UAS/releases
 
 👨‍💻 Pengembang
+Nama        : Nur Muhammad Anang Febriananto
+NIM         : 230605110103
+Prodi       : Teknik Informatika
+Universitas : UIN Maulana Malik Ibrahim Malang
 
-Nama: Nur Muhammad Anang Febriananto
-NIM: 230605110103
-Prodi: Teknik Informatika
-Universitas: UIN Maulana Malik Ibrahim Malang
 
 📜 Lisensi
 
