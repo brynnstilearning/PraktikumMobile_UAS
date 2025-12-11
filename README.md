@@ -130,43 +130,61 @@ flutter run
 bash
 Copy code
 flutter build apk --release
+
 📚 Cara Penggunaan
 🔹 1. Login / Register
+
 Isi email & password
+
 Untuk akun baru → tekan “Daftar Akun Baru”
+
 Reset password tersedia
 
 🔹 2. Dashboard
+
 Greeting otomatis sesuai waktu
+
 Statistik kajian
+
 Daftar kajian yang bisa di-expand
 
 🔹 3. Tambah Kajian
+
 Tekan tombol +
+
 Isi seluruh form
+
 Simpan ke Firestore
 
 🔹 4. Edit / Hapus Kajian
+
 Expand card → pilih Edit atau Hapus
 
 🔹 5. Jadwal Sholat
+
 Melihat 5 waktu sholat harian
+
 Countdown real-time
+
 Bisa ubah kota dari menu Settings
 
 🔹 6. Al-Qur’an Digital
+
 114 surah tersedia
+
 Bisa search, filter, atur font, dan baca detail ayat
 
 🔹 7. Setelan Aplikasi
+
 Dark Mode
+
 Bahasa
+
 Lokasi kota
+
 About App
 
 📂 Struktur Folder
-css
-Copy code
 lib/
 ├── models/
 ├── services/
@@ -177,29 +195,41 @@ lib/
 ├── widgets/
 ├── utils/
 └── main.dart
+
 📥 Download APK
+
 Tambahkan file APK ke folder /apk/ lalu update link berikut:
 
 👉 Download APK:
 https://github.com/brynnstilearning/PraktikumMobile_UAS/releases
 
 👨‍💻 Pengembang
+
 Nama: Nur Muhammad Anang Febriananto
-NIM: 230605110103
+NIM: — isi jika perlu —
 Prodi: Teknik Informatika
 Universitas: UIN Maulana Malik Ibrahim Malang
 
 📜 Lisensi
+
 MIT License – bebas digunakan.
 
 🙏 Acknowledgments
+
 Aladhan API
+
 Quran API by Gading Dev
+
 Firebase
+
 Flutter Community
+
 UIN Malang
 
 📞 Contact
+
 Jika ada pertanyaan:
+
 GitHub: https://github.com/brynnstilearning
-Email: 230605110103@student.uin-malang.ac.id 
+
+Email pribadi: (isi jika mau)
