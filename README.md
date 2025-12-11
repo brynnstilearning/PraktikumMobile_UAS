@@ -198,7 +198,7 @@ https://github.com/brynnstilearning/PraktikumMobile_UAS/releases
 
 👨‍💻 Pengembang
 Nama: Nur Muhammad Anang Febriananto
-NIM: — isi jika perlu —
+NIM: 230605110103
 Prodi: Teknik Informatika
 Universitas: UIN Maulana Malik Ibrahim Malang
 
@@ -207,18 +207,12 @@ MIT License – bebas digunakan.
 
 🙏 Acknowledgments
 Aladhan API
-
 Quran API by Gading Dev
-
 Firebase
-
 Flutter Community
-
 UIN Malang
 
 📞 Contact
 Jika ada pertanyaan:
-
 GitHub: https://github.com/brynnstilearning
-
-Email pribadi: (isi jika mau)
+Email: 230605110103@student.uin-malang.ac.id 
