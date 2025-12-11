@@ -107,7 +107,6 @@ Menggunakan Firebase Authentication:
 # 🚀 Cara Instalasi
 
 ### 1. Clone Repository
-```bash
 git clone https://github.com/brynnstilearning/PraktikumMobile_UAS
 cd PraktikumMobile_UAS
 2. Install Dependencies
