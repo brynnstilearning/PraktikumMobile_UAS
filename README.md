@@ -208,7 +208,7 @@ https://github.com/brynnstilearning/PraktikumMobile_UAS/releases
 👨‍💻 Pengembang
 
 Nama: Nur Muhammad Anang Febriananto
-NIM: — isi jika perlu —
+NIM: 230605110103
 Prodi: Teknik Informatika
 Universitas: UIN Maulana Malik Ibrahim Malang
 
@@ -234,4 +234,4 @@ Jika ada pertanyaan:
 
 GitHub: https://github.com/brynnstilearning
 
-Email pribadi: (isi jika mau)
+Email pribadi: 230605110103@student.uin-malang.ac.id
