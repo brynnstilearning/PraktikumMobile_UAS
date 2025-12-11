@@ -184,7 +184,7 @@ Lokasi kota
 
 About App
 
-📂 Struktur Folder
+📁 Struktur Folder
 lib/
 ├── models/
 ├── services/
@@ -195,6 +195,7 @@ lib/
 ├── widgets/
 ├── utils/
 └── main.dart
+
 
 📥 Download APK
 
