@@ -5,19 +5,6 @@ Fitur utama meliputi CRUD kajian, jadwal sholat real-time, Al-Qur'an digital, au
 
 ---
 
-## 📸 Tampilan Aplikasi
-
-> *(Tambahkan screenshot Anda di folder `/screenshots` dan update path di bawah)*
-
-<p align="left">
-  <img src="screenshots/splash.png" width="180" />
-  <img src="screenshots/dashboard.png" width="180" />
-  <img src="screenshots/prayer.png" width="180" />
-  <img src="screenshots/quran.png" width="180" />
-</p>
-
----
-
 ## 📖 Deskripsi Singkat
 
 **Kajian Scheduler** adalah aplikasi islami yang membantu pengguna:
