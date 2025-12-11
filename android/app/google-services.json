@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "223146529800",
+    "project_id": "kajian-scheduler",
+    "storage_bucket": "kajian-scheduler.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223146529800:android:53693a5129a4f718b5edbd",
+        "android_client_info": {
+          "package_name": "com.example.jadwal_kajian_new"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANutOCSMar8KSdNbMuoWAfU40DS_4Eqow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

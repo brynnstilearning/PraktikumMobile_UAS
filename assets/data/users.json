@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Brian",
+    "email": "briannur2102@gmail.com",
+    "password": "brian123",
+    "level": 1,
+    "points": 0,
+    "createdAt": "2025-10-18T10:00:00.000Z",
+    "updatedAt": null
+  },
+  {
+    "id": "2",
+    "name": "Nirma",
+    "email": "nirma147@gmail.com",
+    "password": "nirma123",
+    "level": 1,
+    "points": 0,
+    "createdAt": "2025-10-18T10:00:00.000Z",
+    "updatedAt": null
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "title": "Kajian Tafsir Al-Baqarah",
+    "ustadz": "Ustadz Ahmad Saputra",
+    "theme": "Tafsir Al-Quran Juz 1-2",
+    "date": "2025-10-23",
+    "time": "Ba'da Maghrib (18:00)",
+    "location": "Masjid Agung Malang",
+    "category": "Tafsir",
+    "categoryColor": "0xFFFFD93D",
+    "notes": "Jangan lupa bawa Al-Quran dan alat tulis",
+    "status": "upcoming"
+  },
+  {
+    "id": "2",
+    "title": "Fiqih Zakat dan Sedekah",
+    "ustadz": "Ustadz Muhammad Ridwan",
+    "theme": "Hukum Zakat Mal dan Fitrah",
+    "date": "2025-10-24",
+    "time": "Ba'da Isya (19:30)",
+    "location": "Musholla An-Nur",
+    "category": "Fiqih",
+    "categoryColor": "0xFFE94C6F",
+    "notes": "Bagi yang punya usaha wajib hadir",
+    "status": "upcoming"
+  },
+  {
+    "id": "3",
+    "title": "Siroh Nabi Muhammad SAW",
+    "ustadz": "Ustadz Yusuf Mansur",
+    "theme": "Periode Makkah",
+    "date": "2025-10-20",
+    "time": "14:00 - 16:00",
+    "location": "Online - Zoom",
+    "category": "Sejarah",
+    "categoryColor": "0xFF4ECDC4",
+    "notes": "Link zoom akan dikirim H-1 via WhatsApp group",
+    "status": "past"
+  },
+  {
+    "id": "4",
+    "title": "Kajian Hadits Arbain Nawawi",
+    "ustadz": "Ustadz Abdul Somad",
+    "theme": "Hadits 1-10",
+    "date": "2025-10-25",
+    "time": "Ba'da Subuh (05:00)",
+    "location": "Masjid Al-Ikhlas",
+    "category": "Hadits",
+    "categoryColor": "0xFF7C6FE8",
+    "notes": "Kajian rutin setiap hari Jumat",
+    "status": "upcoming"
+  },
+  {
+    "id": "5",
+    "title": "Tarbiyah Akhlak Mulia",
+    "ustadz": "Ustadzah Fatimah",
+    "theme": "Berbakti kepada Orang Tua",
+    "date": "2025-10-26",
+    "time": "Ba'da Dzuhur (12:30)",
+    "location": "Masjid Jami' At-Taqwa",
+    "category": "Akhlaq",
+    "categoryColor": "0xFF6BCB77",
+    "notes": "Khusus ibu-ibu dan remaja putri",
+    "status": "upcoming"
+  }
+]

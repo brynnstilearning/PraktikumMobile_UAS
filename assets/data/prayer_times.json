@@ -1,0 +1,17 @@
+{
+  "city": "Malang",
+  "country": "Indonesia",
+  "date": {
+    "gregorian": "20 Oktober 2025",
+    "hijri": "13 Rabiul Akhir 1447 H"
+  },
+  "prayerTimes": {
+    "Subuh": "04:30",
+    "Terbit": "05:47",
+    "Dhuha": "06:15",
+    "Dzuhur": "12:00",
+    "Ashar": "15:15",
+    "Maghrib": "18:00",
+    "Isya": "19:15"
+  }  
+}
